@@ -1,0 +1,282 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>TOHO9000 High Performance Car and Truck Engine Oil Additive Treatment</title>
+<meta name="keywords" content="high engine performance, engine performacnce, power, horsepower, increase power, part, engine, chevy, gm, Mercedes, ford, diesel, LPG Unleaded, leaded, vw, Honda, holden, bmw, car, auto, vehicle, truck, work, oil, buick, street , TOHO, 9000, TOHO9000, machine, harley Davidson, bike, motorbike, boat, Subaru, v8, v6, go cart, cart, mazda, Suzuki, Toyota, Mitsubishi, F1, rally">
+<meta name="keyphrases" content="High Performance, Truck Oil, Car Oil, Oil Additive, Buy Online, Bike Oil, Buy TOHO9000, Environmentally Friendly, Synthetic Oil">
+<meta name="description" content="Increase performance and power in your car bike or truck engine. Works in all engines including Diesel, LPG, Leaded, and Unleaded engines. ">
+<meta name="robots" content="follow,index,all">
+<meta name="googlebot" content="index, follow">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link href="style.css" rel="stylesheet" type="text/css">
+<script>
+	function IsNumeric(sText)
+	{
+	   var ValidChars = "0123456789.";
+	   var IsNumber=true;
+	   var Char;
+	
+	 
+	   for (i = 0; i < sText.length && IsNumber == true; i++) 
+		  { 
+		  Char = sText.charAt(i); 
+		  if (ValidChars.indexOf(Char) == -1) 
+			 {
+			 IsNumber = false;
+			 }
+		  }
+	   return IsNumber;
+   
+   }
+
+
+	var Shared=new Array();
+	var Average=new Array();
+	var TOHO=new Array();
+	
+	
+	Shared[0]=200000;// Distance Travelled
+	Shared[1]=10;// Cost of oil filter
+	Average[0]=5000;// Normal Distance Travelled Between Oil Changes
+	TOHO[0]=200000;// Normal Distance Travelled Between Oil Changes
+	Average[1]=45;// Cost Of Oil
+	TOHO[1]=200;// Cost Of Oil
+	
+	function GetInput(Type,Index){
+		 var val = prompt("What is the new value","Type In Here");
+		 if(IsNumeric(val)){
+			 switch (Type){
+				case "Shared":
+					var Target=document.getElementById("Shared1"+Index);
+					var Target2=document.getElementById("Shared2"+Index);
+					Target.innerHTML=val;
+					Target2.innerHTML=val;
+					Shared[Index]=val;
+				break;
+				case "Average":
+					var Target=document.getElementById("Average"+Index);
+					Target.innerHTML=val;
+					Average[Index]=val;
+				break;
+				case "TOHO":
+					var Target=document.getElementById("TOHO"+Index);
+					Target.innerHTML=val;
+					TOHO[Index]=val;
+				break;
+			 }
+			 
+			 var Target=document.getElementById("Per1");
+			 Target.innerHTML=Shared[0];
+			  var Target=document.getElementById("Per2");
+			 Target.innerHTML=Shared[0];
+			 
+			 var AResult=new Array();
+			 AResult[0]=Shared[0]/Average[0];
+			 var Target=document.getElementById("AResult0");
+			 Target.innerHTML=AResult[0].toFixed(2);
+			 
+			 var TResult=new Array();
+			 TResult[0]=Shared[0]/TOHO[0];
+			 var Target=document.getElementById("TResult0");
+			 Target.innerHTML=TResult[0].toFixed(2);
+			 
+			 AResult[1]=parseFloat(Shared[1])+parseFloat(Average[1]);
+			 var Target=document.getElementById("AResult1");
+			 Target.innerHTML=AResult[1].toFixed(2);
+			 
+			 TResult[1]=parseFloat(Shared[1])+parseFloat(TOHO[1]);
+			 var Target=document.getElementById("TResult1");
+			 Target.innerHTML=TResult[1].toFixed(2);
+			 
+			 AResult[2]=AResult[0]*AResult[1];
+			 var Target=document.getElementById("AResult2");
+			 Target.innerHTML=AResult[2].toFixed(2);
+			 
+			 TResult[2]=TResult[0]*TResult[1];
+			 var Target=document.getElementById("TResult2");
+			 Target.innerHTML=TResult[2].toFixed(2);
+		}else{
+			alert("You must enter a number");
+		}
+	}
+</script>
+
+<style type="text/css">
+<!--
+body {
+	background-image: url(Pics/bg.gif);
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+a:link {
+	color: #5273A5;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #5273A5;
+}
+a:hover {
+	text-decoration: none;
+	color: #000000;
+}
+a:active {
+	text-decoration: none;
+	color: #5273A5;
+}
+.style5 {
+	font-size: 24px;
+	font-weight: bold;
+	color: #000000;
+}
+a {
+	font-weight: bold;
+}
+-->
+</style>
+</head>
+
+<body>
+<center>
+<table width="749" border="0" cellpadding="0" cellspacing="0" class="main_border">
+  <!--DWLayoutTable-->
+  <tr>
+    <td height="18" colspan="2" valign="top"><img src="Pics/toho9000layout2_02.gif" width="662" height="18" align="right"></td>
+    <td width="86" background="Pics/link_background_top.gif" class="top-links"><span class="main_menu"><a href="index.html">Home</a> | <a href="site-map.html">Sitemap</a></span></td>
+    </tr>
+  <tr>
+    <td height="139" colspan="2" valign="top"><img src="Pics/toho9000layout2_05.gif" width="662" height="139" align="right"></td>
+    <td valign="top"><img src="Pics/toho9000layout2_06.gif" width="86" height="139"></td>
+    </tr>
+  <tr>
+    <td width="494" height="22" valign="middle" background="Pics/menu_bg.gif" class="main_menu"><div align="left"><a href="index.html">Home</a> | <a href="Products.php">Products</a> | <a href="TestResults.htm">Tests</a> | <a href="SavingAnalysis.htm">Analysis</a> | <a href="Environment.php">Environment</a> | <a href="Research.htm">Research</a> | <a href="video.htm">Video</a> | <a href="cart/front/order.php">Order Now</a></div></td>
+    <td colspan="2" valign="top" class="menu_right_bottom"><img src="Pics/toho9000layout2_08.gif" width="254" height="22"></td>
+    </tr>
+	<tr>
+		<TD height="16" colspan="3" valign="middle" background="Pics/menu_bg.gif" class="main_menu"><div align="left"><a href="affiliates.html">Affiliates</a> | <a href="testimonials/testimonials.php">Testimonials</a> | <a href="photogallery/photo-gallery.php">Photo Gallery</a>  | <a href="ContactUs.php">Contact Us</a> | <a href="links/index.php">Links</a>   | <a href="http://forum.toho9000.com">Forum</a> | <a href="sound/adverts.php">Sound Bytes</a></div></TD>
+	</tr>
+  <tr>
+    <td height="274" colspan="3" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+          <!--DWLayoutTable-->
+          <tr>
+            <td width="748" height="171" valign="top" bgcolor="#FFFFFF" class="content"><div align="center">
+              <h2 align="left" class="style5">Saving Analysis For Private Vehicle Owner<br>
+                <img src="Pics/dotted_Line.gif" width="725" height="1"></h2>
+              <div align="left"><strong>Click On The Highlighted Headings To Change Their Values.              </strong>
+                <br>
+                <br>
+              </div>
+              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td valign="top"><table width="97%" border="0" align="center" cellpadding="0" cellspacing="2">
+                    <tr>
+                      <td colspan="2" bgcolor="#E5E5E5"><div align="center"><strong>Average Motor Oil </strong></div></td>
+                      </tr>
+                    <tr>
+                      <td width="80%" bgcolor="#E5E5E5"><a href="javascript:GetInput('Shared',0)">Example Distance Travelled</a> </td>
+                      <td width="20%" bgcolor="#E5E5E5"><span id="Shared10">200,000</span> km</td>
+                    </tr>
+                    <tr>
+                      <td bgcolor="#E5E5E5"><a href="javascript:GetInput('Average',0)">Normal Distance Travelled Between Oil Changes</a> </td>
+                      <td bgcolor="#E5E5E5"><span id="Average0">5,000</span> km </td>
+                    </tr>
+                    <tr>
+                      <td bgcolor="#E5E5E5">Number Of Oil Changes Oil </td>
+                      <td bgcolor="#E5E5E5"><span id="AResult0">40</span></td>
+                    </tr>
+
+                    <tr>
+                      <td bgcolor="#E5E5E5"><a href="javascript:GetInput('Average',1)">Cost Of Oil During Change (4L)</a> </td>
+                      <td bgcolor="#E5E5E5">$<span id="Average1">45</span></td>
+                    </tr>
+                    <tr>
+                      <td bgcolor="#E5E5E5"><a href="javascript:GetInput('Shared',1)">Cost Of Oil Filter</a> </td>
+                      <td bgcolor="#E5E5E5">$<span id="Shared11">10</span></td>
+                    </tr>
+                    <tr>
+                      <td bgcolor="#E5E5E5">Total Cost Per Oil Change </td>
+                      <td bgcolor="#E5E5E5">$<span id="AResult1">55</span></td>
+                    </tr>
+
+
+                  </table></td>
+                  <td valign="top"><table width="97%" border="0" align="center" cellpadding="0" cellspacing="2">
+                    <tr>
+                      <td colspan="2" align="center" bgcolor="#E5E5E5"><strong>TOHO9000</strong></td>
+                      </tr>
+                    <tr>
+                      <td width="80%" bgcolor="#E5E5E5"><a href="javascript:GetInput('Shared',0)">Example Distance Travelled</a> </td>
+                      <td width="20%" bgcolor="#E5E5E5"><span id="Shared20">200,000</span> km</td>
+                    </tr>
+                    <tr>
+                      <td bgcolor="#E5E5E5"><a href="javascript:GetInput('TOHO',0)">Normal Distance Travelled Between Oil Changes</a> </td>
+                      <td bgcolor="#E5E5E5"><span id="TOHO0">200,000</span> km </td>
+                    </tr>
+
+                    <tr>
+                      <td bgcolor="#E5E5E5">Number Of Oil Changes </td>
+                      <td bgcolor="#E5E5E5"><span id="TResult0">1</span></td>
+                    </tr>
+                    <tr>
+                      <td bgcolor="#E5E5E5"><a href="javascript:GetInput('TOHO',1)">Cost Of Oil During Change (4L) With TOHO9000</a> </td>
+                      <td bgcolor="#E5E5E5">$<span id="TOHO1">200</span></td>
+                    </tr>
+
+                    <tr>
+                      <td bgcolor="#E5E5E5"><a href="javascript:GetInput('Shared',1)">Cost Of Oil Filter</a> </td>
+                      <td bgcolor="#E5E5E5">$<span id="Shared21">10</span></td>
+                    </tr>
+                    <tr>
+                      <td bgcolor="#E5E5E5">Total Cost Per Oil Change </td>
+                      <td bgcolor="#E5E5E5">$<span id="TResult1">210</span></td>
+                    </tr>
+
+
+                  </table>
+                    <br></td>
+                </tr>
+                <tr>
+                  <td valign="top"><table width="97%" border="0" align="center" cellpadding="0" cellspacing="2">
+
+                    <tr>
+                      <td width="80%" bgcolor="#E5E5E5"><strong>Total Cost Per <span id="Per1">200,000</span>km </strong></td>
+                      <td width="20%" bgcolor="#E5E5E5"><strong>$<span id="AResult2">2200</span></strong></td>
+                    </tr>
+                  </table></td>
+                  <td valign="top"><table width="97%" border="0" align="center" cellpadding="0" cellspacing="2">
+
+                    <tr>
+                      <td width="80%" bgcolor="#E5E5E5"><strong>Total Cost Per <span id="Per2">200,000</span>km</strong> </td>
+                      <td width="20%" bgcolor="#E5E5E5"><strong>$<span id="TResult2">210</span></strong></td>
+                    </tr>
+                  </table></td>
+                </tr>
+              </table>
+              <blockquote>&nbsp;</blockquote>
+              </div></td>
+          </tr>
+          <tr>
+            <td height="70" valign="top"><img src="Pics/toho9000layout2_10.gif" width="748" height="70"></td>
+          </tr>
+          <tr>
+            <td height="33" background="Pics/bottom_bg.gif" class="top-links"><div align="center" class="main_menu"><a href="index.html">Home</a> | <a href="Products.php">Products</a> | <a href="TestResults.htm">Tests</a> | <a href="SavingAnalysis.htm">Analysis</a> | <a href="Environment.php">Environment</a> | <a href="Research.htm">Research</a> | <a href="video.htm">Video</a> | <a href="cart/front/order.php">Order Now</a> | <a href="ContactUs.php">Contact Us</a> | <a href="/privacy.html">Privacy Statement</a> </div></td>
+          </tr>
+            </table></td>
+    </tr>
+  <tr>
+    <td height="1"></td>
+    <td width="168"></td>
+    <td></td>
+  </tr>
+</table>
+</center>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-2937594-1";
+urchinTracker();
+</script></body>
+</html>
